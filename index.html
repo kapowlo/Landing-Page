@@ -12,7 +12,79 @@
 </head>
 
 <body>
-    <h1>hello!</h1>
+    <div class="container">
+        <!--direct children will be header main footer-->
+
+        <header class="header dark-bg">
+            <!--we'll also have a display column to put the hero section under the navbar-->
+            <nav class="navbar">
+                <div class="logo small-white-text">Header Logo</div>
+
+                <ul>
+                    <li><a href="#">header link one</a></li>
+                    <li><a href="#">header link two</a></li>
+                    <li><a href="#">header link three</a></li>
+                </ul>
+            </nav>
+            <div class="hero">
+                <!--set to row so image is next to text-->
+                <div class="wrapper">
+                    <!--add comment here -->
+                    <h1>This website is awesome</h1>
+                    <p>this website has some subtext that goes here under the main title.
+                        It's a smaller font and the color is lower contrast</p>
+                    <button class="hero-button">Sign up</button>
+                </div>
+                <img src="img/ying-yang.png" alt="ying and yang symbol" width="150" height="150">
+            </div>
+        </header>
+
+        <main>
+            <!--we'll have three different section as direct child of the main
+            one above the other so column-->
+            <section class="illustration-questions">
+                <h3>Some random information</h3>
+                <div class="wrap-image-text">
+                    <img src="img/life-meaning.jpg" alt="an image with the text the meaning of life" width="150"
+                        height="150">
+                    <p>what is the meaning of life?</p>
+                </div>
+                <div class="wrap-image-text">
+                    <img src="img/whichpath.png" alt="a person struggling to choose which path to take" width="150"
+                        height="150">
+                    <p>How can you tell which path is the correct one?</p>
+                </div>
+                <div class="wrap-image-text">
+                    <img src="img/reality.jpg" alt="a sign that says Welcome to reality" width="150" height="150">
+                    <p>how can we be sure that what we are experiencing right now is reality?</p>
+                </div>
+                <div class="wrap-image-text">
+                    <img src="img/universe.jpg" alt="a beautiful image of space" width="150" height="150">
+                    <p>How big is our universe and is there anything outside of it?</p>
+                </div>
+
+            </section>
+
+            <section class="quote grey-bg">
+                <h3>Famous Quote</h3>
+                <p class="text"><q>It is difficult to find happiness within oneself, but it is impossible to find it
+                        anywhere else.</q> </p>
+                <p class="author-quote">-Arthur Schopenhauer</p>
+            </section>
+            <section class="Join">
+                <h3>Join us!</h3>
+                <div class="blue">
+                    <p class="small-white-text">Call to action! it's time!</p>
+                    <p>sign up to join for our product by clicking that button right over there!</p>
+                </div>
+                <button class="join-button">Sign up</button>
+            </section>
+        </main>
+        <footer class="dark-bg">
+
+            <p>Copyright &copy; The Odin project 2023</p>
+        </footer>
+    </div>
 </body>
 
 </html>

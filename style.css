@@ -1,5 +1,104 @@
+/*making the  ying yang image bigger in our html has increased the space that our header section takes  */
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+
+body {
+  /*height on the body and height on the container */
+  height: 150vh;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+/* setting up the bg color for all  sections and the font-size font-color */
+.dark-bg {
+  /*header and footer background */
+  background-color: #1f2937;
+}
+.medium-white-text {
+  /*logo text and call to action text  */
+  font-size: 24px;
+  color: #fff;
+}
+.wrapper {
+  /*put a max-width on the wrapper the text will be on multiple lines */
+
+  max-width: 620px;
+}
+.hero .wrapper h1 {
+  /* this is awesome*/
+  color: #f9faf8;
+  font-size: 48px;
+  font-weight: bolder; /*extra-bold? */
+}
+.hero .wrapper p,
+.navbar a {
+  /*the paragraph text under this is awesome and link
+  in the header */
+  font-size: 18px;
+  color: #e5e7eb;
+}
+button {
+  color: #fff;
+  border-radius: 10px; /*round the corners of our buttons */
+  padding: 5px 12px; /*make the button a bit bigger */
+  margin-top: 8px; /*added margin on both button, but later I may have to remove some on the join-button */
+  width: 120px; /*make button a bit longer */
+}
+.blue,
+button {
+  /*color both button but make the background blue for part of the section */
+  background-color: #3882f6;
+}
+.join-button {
+  /*upon closer look this button has a white border */
+  border: 1px solid white;
+}
+.container {
+  /* border: 4px solid red; */
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  /*inside the header there's quite a bit of padding left,right,bottom */
+  border: 3px solid rebeccapurple;
+  padding: 12px 100px 100px 100px;
+  /* display: flex;
+  flex-direction: column; */
+}
+
+.navbar {
+  /*header logo and the link on the same row  */
+
+  display: flex;
+  justify-content: space-between;
+}
+.nav-links {
+  /*all link should be in a row  */
+  margin-right: 120px;
+  display: flex;
+  column-gap: 40px; /*gap between each link */
+}
+
+.hero {
+  /*the image should be next to the h1 and p and add some space   */
+  margin-top: 40px; /*space between ying yang and header text */
+  display: flex;
+
+  column-gap: 95px;
+}
+
+main {
+  border: 3px solid green;
+}
+
+footer {
+  border: 3px solid dodgerblue;
 }

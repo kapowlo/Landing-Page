@@ -1,13 +1,17 @@
 /*making the  ying yang image bigger in our html has increased the space that our header section takes  */
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
-
+.illustration-text img {
+  /*make all the images  of the  1st section have round corners */
+  border-radius: 30px;
+}
 body {
   /*height on the body and height on the container */
-  height: 150vh;
+  height: 200vh;
 }
 a {
   text-decoration: none;
@@ -60,7 +64,7 @@ button {
   border: 1px solid white;
 }
 .container {
-  /* border: 4px solid red; */
+  border: 4px solid red;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -68,7 +72,7 @@ button {
 
 header {
   /*inside the header there's quite a bit of padding left,right,bottom */
-  border: 3px solid rebeccapurple;
+
   padding: 12px 100px 100px 100px;
   /* display: flex;
   flex-direction: column; */
@@ -95,7 +99,7 @@ header {
   column-gap: 95px;
 }
 
-/* css rules for random information section */
+/* css rules for Illustration-text section */
 .text-center-bold {
   /*style the h3 text only */
   margin: 40px 0;
@@ -108,7 +112,7 @@ header {
 .illustration-text {
   /*create space between this section and quote section */
   margin-bottom: 20px;
-  border: 6px solid black;
+
   display: flex;
   flex-direction: column;
   align-items: center; /*center everything inside this container */
@@ -131,4 +135,58 @@ header {
   flex-direction: column; /*put the text under the image */
   align-items: center;
   justify-content: center;
+}
+/* CSS rule for the quote section */
+
+.grey-bg {
+  /*bg color for the section quote */
+  background-color: #e5e7eb;
+}
+.text-light-italic {
+  font-size: 36px;
+  font-style: italic;
+  font-weight: lighter;
+
+  max-width: 500px; /*for flex wrap */
+}
+
+.quote {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.author-quote {
+  position: relative;
+  left: 200px;
+}
+/*add a height on the quote and join section */
+.quote,
+.join {
+  height: 300px;
+}
+
+/*CSS rules for the last section called join */
+.join {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.wrap-button-text {
+  width: 1200px;
+}
+.wrap-button-paragraph {
+  column-gap: 20px;
+  display: flex;
+}
+.blue {
+  border-radius: 10px;
+  padding: 10px;
+}
+
+/*CSS rule for the footer section */
+footer {
+  /*push the footer all the way down */
+  height: 100px;
+  margin-top: auto;
 }

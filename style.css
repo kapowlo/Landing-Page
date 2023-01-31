@@ -95,10 +95,40 @@ header {
   column-gap: 95px;
 }
 
-main {
-  border: 3px solid green;
+/* css rules for random information section */
+.text-center-bold {
+  /*style the h3 text only */
+  margin: 40px 0;
+
+  text-align: center;
+  font-size: 36px;
+  font-weight: bolder;
 }
 
-footer {
-  border: 3px solid dodgerblue;
+.illustration-text {
+  /*create space between this section and quote section */
+  margin-bottom: 20px;
+  border: 6px solid black;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /*center everything inside this container */
+}
+.container-images {
+  margin-bottom: 130px;
+  gap: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: baseline; /*puts all the 4 images at the same starting point inside this container */
+}
+
+.wrap-image-text {
+  row-gap: 10px; /* create space between the text and images */
+  /* flex: 1;  have the items grow inside their container  */
+
+  max-width: 200px; /*put a max width  for the text and images */
+  flex-wrap: wrap; /*make sure the text wraps onto the next line */
+  display: flex;
+  flex-direction: column; /*put the text under the image */
+  align-items: center;
+  justify-content: center;
 }

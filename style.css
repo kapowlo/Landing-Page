@@ -176,12 +176,13 @@ header {
   width: 1200px;
 }
 .wrap-button-paragraph {
-  column-gap: 20px;
+  column-gap: 220px;
   display: flex;
+  /*justify-content: space-evenly; */
 }
 .blue {
   border-radius: 10px;
-  padding: 10px;
+  padding: 40px; /*make blue section bigger */
 }
 
 /*CSS rule for the footer section */

@@ -40,10 +40,9 @@ ul {
   font-size: 48px;
   font-weight: bolder; /*extra-bold? */
 }
-.hero .wrapper p,
-.navbar a {
-  /*the paragraph text under this is awesome and link
-  in the header */
+.small-text-white,
+.nav-links a {
+  /*links nested within nav-links,paragraphs of hero section,second paragraph of join section,paragraph of footer*/
   font-size: 18px;
   color: #e5e7eb;
 }
@@ -190,4 +189,12 @@ footer {
   /*push the footer all the way down */
   height: 100px;
   margin-top: auto;
+}
+.text-white-centered {
+  height: 100%;
+
+  border: 2px solid green;
+  display: flex; /*center the text */
+  justify-content: center;
+  align-items: center;
 }

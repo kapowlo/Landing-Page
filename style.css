@@ -183,17 +183,18 @@ section:nth-child(1n + 2) {
   flex-direction: column;
   align-items: center;
 }
-.wrap-button-text {
-  width: 1200px;
-}
+
 .wrap-button-paragraph {
   column-gap: 220px;
   display: flex;
   /*justify-content: space-evenly; */
 }
 .blue {
+  /*make blue section bigger */
   border-radius: 10px;
-  padding: 40px; /*make blue section bigger */
+  padding: 40px;
+  border: 2px solid red;
+  width: 1200px;
 }
 
 /*CSS rule for the footer section */

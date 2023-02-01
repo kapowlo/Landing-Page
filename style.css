@@ -137,6 +137,12 @@ header {
 }
 /* CSS rule for the quote section */
 
+.text-center-bold.reduce-top-margin {
+  /*for the quote section reduce the space between the p text and the h3 title by a little
+  and bring the h3 title a bit closer to the top  */
+  margin: -30px 0 20px 0;
+}
+
 .grey-bg {
   /*bg color for the section quote */
   background-color: #e5e7eb;

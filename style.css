@@ -63,7 +63,6 @@ button {
   border: 1px solid white;
 }
 .container {
-  border: 4px solid red;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -97,7 +96,13 @@ header {
 
   column-gap: 95px;
 }
-
+main {
+  /*set main to display flex in order to use flex grow on the direct children(all three sections) */
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  border: 8px solid red;
+}
 /* css rules for Illustration-text section */
 .text-center-bold {
   /*style the h3 text only */
@@ -117,7 +122,7 @@ header {
   align-items: center; /*center everything inside this container */
 }
 .container-images {
-  margin-bottom: 130px;
+  margin-bottom: 80px;
   gap: 100px;
   display: flex;
   justify-content: center;
@@ -165,10 +170,11 @@ header {
   position: relative;
   left: 200px;
 }
-/*add a height on the quote and join section */
-.quote,
-.join {
-  height: 300px;
+/*CSS rule to make the join and quote section similar in size but smaller than the first section*/
+section:nth-child(1n + 2) {
+  /*make quote and join section a bit bigger */
+  border: 4px solid orange;
+  flex: 1 1 0;
 }
 
 /*CSS rules for the last section called join */

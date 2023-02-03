@@ -5,47 +5,57 @@
   margin: 0;
   box-sizing: border-box;
 }
+
 .illustration-text img {
   /*make all the images  of the  1st section have round corners */
   border-radius: 30px;
 }
+
 body {
   /*height on the body and height on the container */
   height: 200vh;
 }
+
 a {
   text-decoration: none;
 }
+
 ul {
   list-style: none;
 }
+
 /* setting up the bg color for all  sections and the font-size font-color */
 .dark-bg {
   /*header and footer background */
   background-color: #1f2937;
 }
+
 .medium-white-text {
   /*logo text and call to action text  */
   font-size: 24px;
   color: #fff;
 }
+
 .wrapper {
   /*put a max-width on the wrapper the text will be on multiple lines */
 
   max-width: 620px;
 }
+
 .hero .wrapper h1 {
   /* this is awesome*/
   color: #f9faf8;
   font-size: 48px;
   font-weight: bolder; /*extra-bold? */
 }
+
 .small-text-white,
 .nav-links a {
   /*links nested within nav-links,paragraphs of hero section,second paragraph of join section,paragraph of footer*/
   font-size: 18px;
   color: #e5e7eb;
 }
+
 button {
   color: #fff;
   border-radius: 10px; /*round the corners of our buttons */
@@ -53,11 +63,13 @@ button {
   margin-top: 8px; /*added margin on both button, but later I may have to remove some on the join-button */
   width: 120px; /*make button a bit longer */
 }
+
 .blue,
 button {
   /*color both button but make the background blue for part of the section */
   background-color: #3882f6;
 }
+
 .join-button {
   /*upon closer look this button has a white border */
   border: 1px solid white;
@@ -72,8 +84,6 @@ header {
   /*inside the header there's quite a bit of padding left,right,bottom */
 
   padding: 12px 100px 100px 100px;
-  /* display: flex;
-  flex-direction: column; */
 }
 
 .navbar {
@@ -97,12 +107,12 @@ header {
   column-gap: 95px;
 }
 main {
-  /*set main to display flex in order to use flex grow on the direct children(all three sections) */
+  /*set main to display flex in order to use flex grow on the direct children(section join and quote) */
   height: 100%;
   display: flex;
   flex-direction: column;
-  border: 8px solid red;
 }
+
 /* css rules for Illustration-text section */
 .text-center-bold {
   /*style the h3 text only */
@@ -166,14 +176,15 @@ main {
   justify-content: center;
   align-items: center;
 }
+
 .author-quote {
   position: relative;
   left: 200px;
 }
+
 /*CSS rule to make the join and quote section similar in size but smaller than the first section*/
 section:nth-child(1n + 2) {
   /*make quote and join section a bit bigger */
-  border: 4px solid orange;
   flex: 1 1 0;
 }
 
@@ -187,13 +198,13 @@ section:nth-child(1n + 2) {
 .wrap-button-paragraph {
   column-gap: 220px;
   display: flex;
-  /*justify-content: space-evenly; */
 }
+
 .blue {
   /*make blue section bigger */
   border-radius: 10px;
   padding: 40px;
-  border: 2px solid red;
+
   width: 1200px;
 }
 
@@ -203,10 +214,10 @@ footer {
   height: 100px;
   margin-top: auto;
 }
+
 .text-white-centered {
   height: 100%;
 
-  border: 2px solid green;
   display: flex; /*center the text */
   justify-content: center;
   align-items: center;
